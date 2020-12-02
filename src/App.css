@@ -1,5 +1,15 @@
+
+
 .App {
+  display: flex;
+  flex-direction: row;
   text-align: center;
+  background: #ffffff;
+}
+
+.site {
+  display: flex;
+  flex-direction: row;
 }
 
 .App-logo {

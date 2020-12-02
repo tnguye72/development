@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+
+
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .site {
+    display: flex;
+    flex-direction:  row;
+
+  }
+  
+  .product-div {
+    background-color: floralwhite;
+    margin: 10px;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    box-shadow: 5px 5px 5px #9c8181; 
+    border-radius: 1px 1px;
+    align-items: center;
+    border-radius: 25px;
+    
+  }
+
+  .main-div {
+    min-width: 900px;
+    background: #fff1f3;
+  }
+
+  .sidebar-div {
+    background: floralwhite;
+    min-width: 300px;
+    justify-content: start;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+    box-shadow: 5px 5px 5px #9c8181; 
+    border-radius: 1px 1px;
+  
+  }
+
+  .all-sidebar-content {
+    /* margin-top: 75px; */
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px #9c8181; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    
+  }
+
+  .cart-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cart-item-text {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 220px;
+  }
+
+  .cart-main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .preview-image {
+    height: 450px;
+    width: 300px;
+    border-radius: 25px;
+  }
+
+  .product-name {
+      font-size: 21px;
+  }
+
+  .product-desc {
+      font-size: 14px;
+  }
+
+  .sidebar-section, .options-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  .filter-type-text {
+    font-size: 21px;
+    
+  }
+
+  .title {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    color: white;
+    background-color: #e7968b;
+    text-shadow: 2px 2px #9c8181;
+    box-shadow: 5px 5px 5px #9c8181; 
+    border-radius: 1px 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+
+
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .small-heading-text {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .product-name {
+    display: block;
+    position: relative;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-size: 23px;
+    text-align: center;
+  }
+
+  .product-desc {
+    display: block;
+    position: relative;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .mini-image {
+    height: 70px;
+    width: 46.7px;
+    border-radius: 15px;
+    margin: 5px;
+    margin-right: 10px;
+  }
+
+  .button {
+    padding: 7px;
+  }
+
+  .logo {
+    width: 75px;
+    height: auto;
+    padding: 10px;
+  }
+ 
+
+ 
