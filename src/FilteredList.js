@@ -110,12 +110,12 @@ class FilteredList extends Component {
       
       
 		return (
-          <div>
+      <div className="site">
             <div className="title">
         <img className="logo" src="https://www.flaticon.com/svg/static/icons/svg/768/768213.svg"/> &nbsp;
         Jeff's Dessert Shop</div>
           
-            <div className="site">
+           <div className="sidebar-and-main">
               
               <div className="sidebar-div">
               <div className="all-sidebar-content">
@@ -200,7 +200,7 @@ class FilteredList extends Component {
 
                   <div className="sidebar-section">
 
-                  <div className="small-heading-text">Cart (Total: ${this.cartTotal}):</div>
+                  <Typography variant="h5">Cart (Total: ${this.cartTotal}):</Typography>
                   
                   {cart.map(product =>
                     <div className="cart">
@@ -241,8 +241,9 @@ class FilteredList extends Component {
                 <div className="main-div">
                 <DisplayList list={products} state={this.state} addToCart={this.addToCart}/>
                 </div>
+                </div>
             </div>  
-            </div>
+            
 		);
 	}
 

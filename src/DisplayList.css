@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-
+.App {
+  background-color: #fff1f3;
+  
+}
 
 
 .products {
@@ -13,12 +16,21 @@
 
   .site {
     display: flex;
-    flex-direction:  row;
+    flex-direction:  column;
+    background-color: #fff1f3;
+    height: 100%;
+  width: 100%;
 
+  }
+
+  .sidebar-and-main {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
   }
   
   .product-div {
-    background-color: floralwhite;
+    background-color: white;
     margin: 10px;
     min-height: 65vh;
     display: flex;
@@ -32,8 +44,11 @@
   }
 
   .main-div {
-    min-width: 900px;
-    background: #fff1f3;
+    width: 100%;
+    height: 100%;
+    background-color: #fff1f3;
+
+    
   }
 
   .sidebar-div {
@@ -128,6 +143,7 @@
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 5px;
+    width: 100%;
 
 
   }
@@ -135,7 +151,6 @@
   .container {
     display: block;
     position: relative;
-    padding-left: 35px;
     margin-bottom: 7px;
     margin-top: 7px;
     font-size: 15px;
