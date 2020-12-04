@@ -137,155 +137,151 @@ class FilteredList extends Component {
         <div className="sidebar-and-main"> 
          {/* This is the sidebar div, which contains the sidebar. */}
           <div className="sidebar-div">
-            {/* This is the div containing all the content of the sidebar. */}
-            <div className="all-sidebar-content">
-              
-              {/* This the div containing the Flavor section of the sidebar */}
-              <div className="sidebar-section">
-                <Typography variant="h5">Flavor:</Typography>
-                {/* This is a div containing all the options for flavors. */}
+            {/* This the div containing the Flavor section of the sidebar */}
+            <div className="sidebar-section">
+              <Typography variant="h5">Flavor:</Typography>
+              {/* This is a div containing all the options for flavors. */}
+              <div className="options-box">
+                {/* This is a label containing the radio button corresponding to "All" flavors. */}
+                <label className="container"> 
+                  <Typography>All
+                    {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
+                    <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="All" defaultChecked/>
+                  </Typography>
+                </label>
+                {/* This is a label containing the radio button corresponding to "Strawberry" flavors. */}
+                <label className="container"> 
+                  <Typography>Strawberry
+                    {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
+                    <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Strawberry"/>
+                  </Typography>
+                </label>
+                {/* This is a label containing the radio button corresponding to "Vanilla" flavors. */}
+                <label className="container"> 
+                  <Typography>Vanilla
+                    {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
+                    <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Vanilla"/>
+                  </Typography>
+                </label>
+                {/* This is a label containing the radio button corresponding to "Chocolate" flavors. */}
+                <label className="container">
+                  <Typography>Chocolate
+                    {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
+                    <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Chocolate"/>
+                  </Typography>
+                </label>
+                {/* This is a label containing the radio button corresponding to "Other" flavors. */}
+                <label className="container"> 
+                  <Typography>Other
+                    {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
+                    <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Other"/>
+                  </Typography>
+                </label>
+              </div>
+            </div>
+
+            {/* This the div containing the Type section of the sidebar */}
+            <div className="sidebar-section">
+              <Typography variant="h5">Type:</Typography>
+                {/* This is a div containing all the options for types. */}
                 <div className="options-box">
-                  {/* This is a label containing the radio button corresponding to "All" flavors. */}
-                  <label className="container"> 
-                    <Typography>All
-                      {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
-                      <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="All" defaultChecked/>
-                    </Typography>
-                  </label>
-                  {/* This is a label containing the radio button corresponding to "Strawberry" flavors. */}
-                  <label className="container"> 
-                    <Typography>Strawberry
-                      {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
-                      <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Strawberry"/>
-                    </Typography>
-                  </label>
-                  {/* This is a label containing the radio button corresponding to "Vanilla" flavors. */}
-                  <label className="container"> 
-                    <Typography>Vanilla
-                      {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
-                      <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Vanilla"/>
-                    </Typography>
-                  </label>
-                  {/* This is a label containing the radio button corresponding to "Chocolate" flavors. */}
+                  {/* This is a label containing the radio button corresponding to "All" types. */}
                   <label className="container">
-                    <Typography>Chocolate
-                      {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
-                      <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Chocolate"/>
+                    <Typography>All
+                      {/* This button calls onSelectFilterType and updates the state according to the type selected */}
+                      <input name="type-button" type="radio" id="flavor" onClick={this.onSelectFilterType} value="All" defaultChecked/>
                     </Typography>
                   </label>
-                  {/* This is a label containing the radio button corresponding to "Other" flavors. */}
-                  <label className="container"> 
-                    <Typography>Other
-                      {/* This button calls onSelectFilterFlavor and updates the state according to the flavor selected */}
-                      <input name="flavor-button" type="radio" id="flavor" onClick={this.onSelectFilterFlavor} value="Other"/>
+                  {/* This is a label containing the radio button corresponding to "Cupcake" types. */}
+                  <label className="container">
+                    <Typography>Cupcakes
+                      {/* This button calls onSelectFilterType and updates the state according to the type selected */}
+                      <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cupcake"/>
+                    </Typography>
+                  </label>
+                  {/* This is a label containing the radio button corresponding to "Cake" types. */}
+                  <label className="container">
+                    <Typography>Cakes
+                      {/* This button calls onSelectFilterType and updates the state according to the type selected */}
+                      <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cake"/>
+                    </Typography>
+                  </label>
+                  {/* This is a label containing the radio button corresponding to "Cheesecake" types. */}
+                  <label className="container">
+                    <Typography>Cheesecakes
+                      {/* This button calls onSelectFilterType and updates the state according to the type selected */}
+                      <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cheesecake"/>
                     </Typography>
                   </label>
                 </div>
               </div>
-
-              {/* This the div containing the Type section of the sidebar */}
+              
+              {/* This the div containing the Sorting section of the sidebar */}
               <div className="sidebar-section">
-                <Typography variant="h5">Type:</Typography>
-                  {/* This is a div containing all the options for types. */}
-                  <div className="options-box">
-                    {/* This is a label containing the radio button corresponding to "All" types. */}
-                    <label className="container">
-                      <Typography>All
-                        {/* This button calls onSelectFilterType and updates the state according to the type selected */}
-                        <input name="type-button" type="radio" id="flavor" onClick={this.onSelectFilterType} value="All" defaultChecked/>
-                      </Typography>
-                    </label>
-                    {/* This is a label containing the radio button corresponding to "Cupcake" types. */}
-                    <label className="container">
-                      <Typography>Cupcakes
-                        {/* This button calls onSelectFilterType and updates the state according to the type selected */}
-                        <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cupcake"/>
-                      </Typography>
-                    </label>
-                    {/* This is a label containing the radio button corresponding to "Cake" types. */}
-                    <label className="container">
-                      <Typography>Cakes
-                        {/* This button calls onSelectFilterType and updates the state according to the type selected */}
-                        <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cake"/>
-                      </Typography>
-                    </label>
-                    {/* This is a label containing the radio button corresponding to "Cheesecake" types. */}
-                    <label className="container">
-                      <Typography>Cheesecakes
-                        {/* This button calls onSelectFilterType and updates the state according to the type selected */}
-                        <input name="type-button" type="radio" id="type" onClick={this.onSelectFilterType} value="Cheesecake"/>
-                      </Typography>
-                    </label>
-                  </div>
+                <Typography variant="h5">Sort by Price:</Typography>
+                {/* This is a div containing all the options for sorting. */}
+                <div className="options-box">
+                  {/* This is a label containing the radio button corresponding to default sorting. */}
+                  <label className="container">
+                    <Typography>Default
+                      {/* This button calls updateSorting and updates the state according to the sorting selected */}
+                      <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="" defaultChecked/>
+                    </Typography>
+                  </label>
+                  {/* This is a label containing the radio button corresponding to sorting from lowest to highest price. */}
+                  <label className="container">
+                    <Typography>Lowest to Highest
+                      {/* This button calls updateSorting and updates the state according to the sorting selected */}
+                      <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="loToHi"/>
+                    </Typography>
+                  </label>
+                  {/* This is a label containing the radio button corresponding to sorting from highest to lowest price. */}
+                  <label className="container">
+                    <Typography>Highest to Lowest
+                      {/* This button calls updateSorting and updates the state according to the sorting selected */}
+                      <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="hiToLo"/>
+                    </Typography>
+                  </label>
                 </div>
-                
-                {/* This the div containing the Sorting section of the sidebar */}
-                <div className="sidebar-section">
-                  <Typography variant="h5">Sort by Price:</Typography>
-                  {/* This is a div containing all the options for sorting. */}
-                  <div className="options-box">
-                    {/* This is a label containing the radio button corresponding to default sorting. */}
-                    <label className="container">
-                      <Typography>Default
-                        {/* This button calls updateSorting and updates the state according to the sorting selected */}
-                        <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="" defaultChecked/>
-                      </Typography>
-                    </label>
-                    {/* This is a label containing the radio button corresponding to sorting from lowest to highest price. */}
-                    <label className="container">
-                      <Typography>Lowest to Highest
-                        {/* This button calls updateSorting and updates the state according to the sorting selected */}
-                        <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="loToHi"/>
-                      </Typography>
-                    </label>
-                    {/* This is a label containing the radio button corresponding to sorting from highest to lowest price. */}
-                    <label className="container">
-                      <Typography>Highest to Lowest
-                        {/* This button calls updateSorting and updates the state according to the sorting selected */}
-                        <input name="sort-button" type="radio" id="price" onClick={this.updateSorting} value="hiToLo"/>
-                      </Typography>
-                    </label>
-                  </div>
-                </div>
-                {/* This the div containing the Cart section of the sidebar */}
-                <div className="sidebar-section">
-                  <Typography variant="h5">Cart (Total: ${this.cartTotal}):</Typography>
-                  {/* This portion maps each product in the cart to relevant information that should be displayed. */}
-                  {cart.map(product =>
-                    // This is the div containing the entire cart.
-                    <div className="cart">
-                      {/* This is the div containing a single cart item */}
-                      <div className="cart-item">
-                        {/* This is the div containing all the content of each cart item, excluding the "remove" button. */}
-                        <div className="cart-main">
-                          {/* This displays the image of the item. */}
-                          <img className="mini-image" src={this.props.list.find(item => item.id == product.id).image}/>
-                          {/* This div contains the text that is relevant for display */}
-                          <div className="cart-item-text">
-                            <Typography><Box fontWeight="fontWeightBold">{this.props.list.find(item => item.id == product.id).name}</Box></Typography>
-                            <Typography>Quantity: {product.quantity}</Typography>
-                            <Typography>Price: ${this.props.list.find(item => item.id == product.id).price}</Typography>
-                          </div>
+              </div>
+              {/* This the div containing the Cart section of the sidebar */}
+              <div className="sidebar-section">
+                <Typography variant="h5">Cart (Total: ${this.cartTotal}):</Typography>
+                {/* This portion maps each product in the cart to relevant information that should be displayed. */}
+                {cart.map(product =>
+                  // This is the div containing the entire cart.
+                  <div className="cart">
+                    {/* This is the div containing a single cart item */}
+                    <div className="cart-item">
+                      {/* This is the div containing all the content of each cart item, excluding the "remove" button. */}
+                      <div className="cart-main">
+                        {/* This displays the image of the item. */}
+                        <img className="mini-image" src={this.props.list.find(item => item.id == product.id).image}/>
+                        {/* This div contains the text that is relevant for display */}
+                        <div className="cart-item-text">
+                          <Typography><Box fontWeight="fontWeightBold">{this.props.list.find(item => item.id == product.id).name}</Box></Typography>
+                          <Typography>Quantity: {product.quantity}</Typography>
+                          <Typography>Price: ${this.props.list.find(item => item.id == product.id).price}</Typography>
                         </div>
-                        {/* This is a button that removes an item from the cart by calling removeFromCart. */}
-                        <Button onClick={() => this.removeFromCart(product)} variant="contained">Remove 1 from Cart</Button>
                       </div>
+                      {/* This is a button that removes an item from the cart by calling removeFromCart. */}
+                      <Button onClick={() => this.removeFromCart(product)} variant="contained">Remove 1 from Cart</Button>
                     </div>
-                  )}
-                  {/* This is a div containing the Checkout button. */}
-                  <div className="options-box">
-                    <Button variant="contained">Checkout</Button>
                   </div>
+                )}
+                {/* This is a div containing the Checkout button. */}
+                <div className="options-box">
+                  <Button variant="contained">Checkout</Button>
                 </div>
               </div>
             </div>
 
-            {/* This is the main div, which contains the display of the list of products, which is taken care of by DisplayList. */}
-            <div className="main-div">
-              <DisplayList list={products} state={this.state} addToCart={this.addToCart}/>
-            </div>
+          {/* This is the main div, which contains the display of the list of products, which is taken care of by DisplayList. */}
+          <div className="main-div">
+            <DisplayList list={products} state={this.state} addToCart={this.addToCart}/>
           </div>
-        </div>      
+        </div>
+      </div>      
 		);
 	}
 

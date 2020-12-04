@@ -5,7 +5,6 @@
   
 }
 
-
 .products {
     display: flex;
     flex-direction: row;
@@ -40,15 +39,12 @@
     border-radius: 1px 1px;
     align-items: center;
     border-radius: 25px;
-    
   }
 
   .main-div {
     width: 100%;
     height: 100%;
     background-color: #fff1f3;
-
-    
   }
 
   .sidebar-div {
@@ -64,10 +60,6 @@
   
   }
 
-  .all-sidebar-content {
-    /* margin-top: 75px; */
-  }
-
   .cart-item {
     display: flex;
     flex-direction: column;
@@ -78,14 +70,6 @@
     margin: 5px;
     width: 300px;
     
-  }
-
-  .cart-item-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   .cart-item-text {
@@ -106,25 +90,12 @@
     border-radius: 25px;
   }
 
-  .product-name {
-      font-size: 21px;
-  }
-
-  .product-desc {
-      font-size: 14px;
-  }
-
   .sidebar-section, .options-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 5px;
-  }
-
-  .filter-type-text {
-    font-size: 21px;
-    
   }
 
   .title {
@@ -149,34 +120,6 @@
   }
 
   .container {
-    display: block;
-    position: relative;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .small-heading-text {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    font-size: 23px;
-    text-align: center;
-  }
-
-  .product-name {
-    display: block;
-    position: relative;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    font-size: 23px;
-    text-align: center;
-  }
-
-  .product-desc {
     display: block;
     position: relative;
     margin-bottom: 7px;
