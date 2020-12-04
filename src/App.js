@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import FilteredList from './FilteredList'
 
+// This is the product list, which contains id, name, image, flavor, type, and price of each product.
 const productList = [
   { 
     id: 1,
@@ -117,12 +118,11 @@ const productList = [
   }
  ]
 
- 
+// This function returns a div containing the entire application.
 function App() {
   return (
     <div className="App">
-    
-		<FilteredList list={productList} />
+		  <FilteredList list={productList} />
 	</div>
 
   );
