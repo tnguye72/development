@@ -131,7 +131,7 @@ class FilteredList extends Component {
       <div className="site">
         {/* This is the main banner of the site, containing the title. */}
         <div className="title">
-        <img className="logo" src="https://www.flaticon.com/svg/static/icons/svg/768/768213.svg"/> &nbsp;
+        <img className="logo" src="https://www.flaticon.com/svg/static/icons/svg/768/768213.svg" alt="cartoon image of cake"/> &nbsp;
         Jeff's Dessert Shop</div>
         {/* This is the main div, which contains the sidebar and main portion of the site, containing the products. */}
         <div className="sidebar-and-main"> 
@@ -256,7 +256,7 @@ class FilteredList extends Component {
                       {/* This is the div containing all the content of each cart item, excluding the "remove" button. */}
                       <div className="cart-main">
                         {/* This displays the image of the item. */}
-                        <img className="mini-image" src={this.props.list.find(item => item.id == product.id).image}/>
+                        <img className="mini-image" src={this.props.list.find(item => item.id == product.id).image} alt={this.props.list.find(item => item.id == product.id).name}/>
                         {/* This div contains the text that is relevant for display */}
                         <div className="cart-item-text">
                           <Typography><Box fontWeight="fontWeightBold">{this.props.list.find(item => item.id == product.id).name}</Box></Typography>

@@ -25,7 +25,7 @@ class DisplayList extends Component {
         <div className="products">
           {this.props.list.map(product => 
             <div className="product-div" key={product.id}>
-              <img className="preview-image" src={product.image}/>
+              <img className="preview-image" src={product.image} alt={product.name}/>
                 <Typography variant='h6' > <Box fontWeight="fontWeightBold">{product.name}</Box></Typography>
                 <Typography> Main Flavor: &nbsp;   {product.flavor}</Typography>
                 <Typography> Type:  &nbsp;  {product.type}</Typography>
