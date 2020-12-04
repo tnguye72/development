@@ -1,3 +1,17 @@
+# About this Application
+
+## Organization of components
+
+I have 3 main classes: App, FilteredList, and DisplayList. App simply contains the initial product list that will be used by the other classes and displays the entire site. FilteredList takes care of most of the state and button logic as well as display organization, such as the sidebar. DisplayList takes care of displaying the entire product list by mapping each product to an item card that displays relevant information. 
+
+## How data is passed down through components
+
+App.js returns a div containing FilteredList, which takes in the product list that is initialized in App. Then, FilteredList's render function's return method includes a div that contains DisplayList, with the filtered product list passed in, as the filtering and sorting is done throughout the class. Then, DisplayList is then able to take that filtered list and display it accordingly.
+
+## How the user trigger state changes
+
+The user can trigger state changes by clicking on the radio buttons on the sidebar corresponding with Flavor filters, Type filters, and Sorting by Price. Each of these radio buttons trigger a function that is defined in FilteredList that will update the state and change the display of the product list accorrdingly. For example, clicking on the radio button labeled "Strawberry" under the "Flavor" section will trigger the onSelectFilterFlavor function and update the flavor in the state of FilteredList. Also, the user can trigger state changes in the cart as well by either clicking on the "Add 1 to cart" button under any product card, or the "Remove 1 from cart" button under each item in the cart. This will update the cart portion of the state and update the display accordingly. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
